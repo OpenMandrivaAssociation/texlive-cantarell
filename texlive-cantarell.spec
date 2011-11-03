@@ -1,3 +1,9 @@
+# revision 23708
+# category Package
+# catalog-ctan /fonts/cantarell
+# catalog-date 2011-08-23 14:32:14 +0200
+# catalog-license lppl1.3
+# catalog-version 2.0
 Name:		texlive-cantarell
 Version:	2.0
 Release:	1
@@ -119,6 +125,7 @@ Dvips.
 %doc %{_texmfdistdir}/source/fonts/cantarell/cantarell-fixtextcomp.mtx
 %doc %{_texmfdistdir}/source/fonts/cantarell/cantarell-map.tex
 %doc %{_texmfdistdir}/source/fonts/cantarell/sfd2type1.pe
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -129,3 +136,5 @@ Dvips.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
