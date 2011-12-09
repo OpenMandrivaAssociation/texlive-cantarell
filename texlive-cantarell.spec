@@ -1,11 +1,11 @@
-# revision 23708
+# revision 24705
 # category Package
 # catalog-ctan /fonts/cantarell
-# catalog-date 2011-08-23 14:32:14 +0200
+# catalog-date 2011-11-30 18:37:09 +0100
 # catalog-license lppl1.3
-# catalog-version 2.0
+# catalog-version 2.1
 Name:		texlive-cantarell
-Version:	2.0
+Version:	2.1
 Release:	1
 Summary:	LaTeX support for the Cantarell font family
 Group:		Publishing
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 Cantarell is a contemporary Humanist sans serif designed by
@@ -32,19 +29,19 @@ package using FontForge from its sources, for full support with
 Dvips.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
