@@ -28,16 +28,8 @@ includes Type 1 versions of the fonts, converted for this
 package using FontForge from its sources, for full support with
 Dvips.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -123,7 +115,6 @@ Dvips.
 %doc %{_texmfdistdir}/source/fonts/cantarell/cantarell-fixtextcomp.mtx
 %doc %{_texmfdistdir}/source/fonts/cantarell/cantarell-map.tex
 %doc %{_texmfdistdir}/source/fonts/cantarell/sfd2type1.pe
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -134,5 +125,3 @@ Dvips.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
