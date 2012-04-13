@@ -1,11 +1,11 @@
-# revision 25089
+# revision 25752
 # category Package
 # catalog-ctan /fonts/cantarell
-# catalog-date 2012-01-10 07:43:57 +0100
+# catalog-date 2012-03-27 12:09:20 +0200
 # catalog-license lppl1.3
-# catalog-version 2.2
+# catalog-version 2.3
 Name:		texlive-cantarell
-Version:	2.2
+Version:	2.3
 Release:	1
 Summary:	LaTeX support for the Cantarell font family
 Group:		Publishing
