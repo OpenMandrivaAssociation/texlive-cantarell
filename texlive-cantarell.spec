@@ -201,3 +201,34 @@ Dvips.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.4-1
++ Revision: 812094
+- Update to latest release.
+
+* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.3-1
++ Revision: 790539
+- Update to latest release.
+
+* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.2-1
++ Revision: 762533
+- Update to latest upstream package
+
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.1-2
++ Revision: 749970
+- Rebuild to reduce used resources
+
+* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.1-1
++ Revision: 739704
+- texlive-cantarell
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.0-1
++ Revision: 718002
+- texlive-cantarell
+- texlive-cantarell
+- texlive-cantarell
+- texlive-cantarell
+- texlive-cantarell
+
