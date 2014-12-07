@@ -6,7 +6,7 @@
 # catalog-version 2.4
 Name:		texlive-cantarell
 Version:	2.4
-Release:	7
+Release:	8
 Summary:	LaTeX support for the Cantarell font family
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/cantarell
