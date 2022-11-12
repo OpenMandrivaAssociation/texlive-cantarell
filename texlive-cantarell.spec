@@ -5,8 +5,8 @@ Summary:	LaTeX support for the Cantarell font family
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/cantarell
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cantarell.r54512.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cantarell.doc.r54512.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cantarell.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cantarell.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
