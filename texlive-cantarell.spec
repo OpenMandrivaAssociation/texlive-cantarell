@@ -3,7 +3,7 @@ Version:	54512
 Release:	2
 Summary:	LaTeX support for the Cantarell font family
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/cantarell
+URL:		https://www.ctan.org/tex-archive/fonts/cantarell
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cantarell.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/cantarell.doc.r%{version}.tar.xz
