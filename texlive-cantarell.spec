@@ -1,9 +1,10 @@
 %global tl_name cantarell
 %global tl_revision 77682
+%global tl_version 3.2
 
 Name:		texlive-%{tl_name}
 Epoch:		1
-Version:	3.2
+Version:	%{tl_version}
 Release:	%{tl_revision}.1
 Summary:	LaTeX support for the Cantarell font family
 Group:		Publishing
@@ -13,7 +14,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/cantarell.r%{tl_
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/cantarell.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 Cantarell is a contemporary Humanist sans serif designed by Dave
@@ -23,3 +25,10 @@ provides support for this font in LaTeX. It includes Type 1 versions of
 the fonts, converted for this package using FontForge from its sources,
 for full support with Dvips.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from cantarell:
+Map cantarell.map
+TL_DROPIN_EOF
